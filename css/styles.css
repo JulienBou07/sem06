@@ -1,0 +1,153 @@
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+
+body{
+    background-color: rgb(9, 26, 33);
+    font-family: "Averia Serif Libre", serif;
+    color: #eca136;
+
+}
+
+body a{
+    text-decoration: none;
+    
+}
+
+body ul{
+    list-style: none;
+}
+
+/*------------------------------------------------------------------------------
+   Mise en page
+------------------------------------------------------------------------------*/
+
+.wrapper{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*------------------------------------------------------------------------------
+   Modules
+------------------------------------------------------------------------------*/
+
+/* HEADER */
+
+header{
+   width: 1000px;
+   background-color: rgba(15, 38, 49, 0.95);
+   position: fixed;
+   left: calc(50% - 500px);
+   top: 0;
+   z-index: 10;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+header h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 11.5px 0;
+}
+
+/* SECTION MODULE */
+
+section.contenu .wrapper{
+    max-width: 925px;
+    margin: 100px auto 0 auto;
+}
+
+section.contenu img{
+    max-width: 100%;
+}
+
+.contenu ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 45px;
+    padding: 0;
+}
+
+.contenu ul li {
+    padding: 20px;
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+    position: relative;
+}
+
+/* BOUTON IMAGE */
+
+.bouton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+.bouton :hover{
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(15, 38, 49, 0.95);
+    padding: 23px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+footer p{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: lighter;
+
+}
+
+/* NAV MEDIA */
+
+.media{
+    background-color: rgb(15, 38, 49);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: fixed;
+    top: 200px;
+    left: 0;
+}
+
+.media img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.media ul{
+    list-style: none;
+    padding: 0;
+}
