@@ -145,9 +145,27 @@ footer p{
     height: 50px;
     width: 50px;
     margin: 10px;
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+.media img:hover{
+    transform: translateX(3px); 
 }
 
 .media ul{
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+}
+
+/* FENÊTRE MODALE */
+
+div.modale img.zoom{
+    width: 800px;
+    height: 600px;
+
+}
+
+div.modale img.zoom:hover{
+    cursor: pointer;
 }
