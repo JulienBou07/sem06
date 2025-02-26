@@ -160,12 +160,33 @@ footer p{
 
 /* FENÊTRE MODALE */
 
+div.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modale.visible{
+    display: flex;
+}
+
 div.modale img.zoom{
     width: 800px;
     height: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
 
 }
 
 div.modale img.zoom:hover{
     cursor: pointer;
 }
+
